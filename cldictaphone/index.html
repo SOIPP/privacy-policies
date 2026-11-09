@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Politique de confidentialité de l’extension ClDictaphone Chrome, éditée par SOIPP.">
+  <title>Confidentialité — ClDictaphone Chrome</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #17243b; background: #f3f6fb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.65; }
+    main { max-width: 52rem; margin: 3rem auto; padding: 2.5rem; background: #fff; border: 1px solid #dce4ef; border-radius: 1rem; }
+    .brand { font-size: .85rem; font-weight: 750; letter-spacing: .16em; color: #355fa0; }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.5rem); line-height: 1.2; }
+    h2 { margin-top: 2rem; font-size: 1.25rem; }
+    a { color: #234e91; text-underline-offset: .2em; }
+    a:focus-visible { outline: .2rem solid #355fa0; outline-offset: .3rem; }
+    .scope { padding: 1rem 1.25rem; border-left: .25rem solid #355fa0; background: #f3f6fb; }
+    footer, .date { color: #56657d; font-size: .9rem; }
+    footer { margin-top: 2rem; }
+    @media (max-width: 40rem) { main { margin: 1rem; padding: 1.5rem; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">SOIPP</div>
+    <h1>Confidentialité de ClDictaphone Chrome</h1>
+    <p class="date">Dernière mise à jour : <time datetime="2026-11-09">9 novembre 2026</time>.</p>
+    <p>Éditeur : <strong>SOIPP</strong>, France.<br>
+      Contact : <a href="mailto:contact@soipp.com">contact@soipp.com</a> —
+      <a href="tel:+33494302080">+33 4 94 30 20 80</a>.</p>
+
+    <p class="scope">Cette politique concerne l’extension Chrome, et non l’ensemble
+      des traitements de votre installation GLPI. La version 0.8.6 est préparée pour
+      publication ; les nouvelles protections signalées ci-dessous ne s’appliquent
+      qu’après son installation. Elles ne sont pas annoncées pour la version 0.8.4
+      déjà distribuée.</p>
+
+    <h2>Ce que l’extension traite</h2>
+    <p>ClDictaphone relie le dossier de dictaphone que vous autorisez au GLPI que
+      vous choisissez. Elle traite les caractéristiques des volumes amovibles,
+      le dossier choisi, les noms et chemins relatifs, tailles, dates et métadonnées
+      des fichiers DSS, DS2, MP3 et WAV. Elle peut lire leur contenu audio pour les
+      opérations demandées. Des empreintes techniques permettent de reconnaître
+      le volume et les fichiers ; elles ne sont pas considérées comme anonymes.</p>
+    <p>L’adresse du GLPI associé et les paramètres d’association sont conservés
+      localement. L’adresse de l’onglet choisi est lue lors de l’association.
+      L’extension ne consulte pas votre historique général et ne demande pas
+      d’accès au microphone. Les dictées peuvent contenir des données personnelles,
+      confidentielles ou de santé : ne sélectionnez que des fichiers que vous
+      êtes autorisé à traiter.</p>
+
+    <h2>Pourquoi et à qui les données sont transmises</h2>
+    <p>Les données servent uniquement à afficher les fichiers autorisés, à remettre
+      ceux que vous sélectionnez aux fonctions ClDictaphone et à permettre leur
+      récupération locale. Le dictaphone reste en lecture seule : l’extension ne
+      renomme, ne modifie et ne supprime pas ses fichiers, même après leur copie
+      en ligne.</p>
+    <p>Les fichiers sont remis à la page du GLPI que vous avez associé, et non à un
+      serveur central de SOIPP imposé par l’extension. Leur stockage ultérieur,
+      notamment dans SharePoint, relève de votre organisation et de sa propre
+      politique. L’extension n’intègre ni publicité, ni télémétrie, ni service de
+      transcription. Les données traitées par ces fonctionnalités ne sont pas
+      vendues et ne sont pas utilisées pour le ciblage publicitaire, l’évaluation
+      de solvabilité ou une finalité étrangère à ce fonctionnement.</p>
+
+    <h2>Copies locales de récupération</h2>
+    <p>Avant un dépôt par le circuit prévu, une copie audio et ses métadonnées sont
+      conservées dans le stockage local de l’extension, au sein de votre profil
+      Chrome. Leur échéance d’accès est de <strong>30 jours depuis la création de
+      la copie</strong>. Les copies expirées sont nettoyées au démarrage, lors de
+      l’installation, par une alarme quotidienne ou lors de leur consultation.
+      Chrome doit s’exécuter : la suppression physique à l’heure exacte n’est pas
+      garantie sur un poste éteint. Cela ne supprime jamais le fichier source du
+      dictaphone.</p>
+    <p><strong>À partir de la version 0.8.6</strong>, les copies, y compris leurs
+      métadonnées et blocs en cours de transfert, sont chiffrées localement par
+      AES-GCM. La clé reste dans le profil Chrome et n’est pas envoyée au GLPI.
+      Les copies sont liées à l’adresse et au chemin du GLPI associé. Les anciennes
+      copies sont protégées lors de leur reprise et ne sont remises au GLPI courant
+      qu’après votre rattachement explicite. Une clé manquante provoque un refus
+      d’accès, sans remplacement silencieux ni destruction des copies.</p>
+    <p>Ces protections ne sécurisent pas un poste ou un profil Chrome compromis.
+      Elles ne séparent pas les comptes ou entités au sein d’un même GLPI associé :
+      ne partagez pas un profil Chrome entre personnes qui ne doivent pas accéder
+      aux mêmes copies. La version 0.8.6 limite les copies à 12 Mio par fichier,
+      256 Mio de contenu audio réservé et 2 000 copies ; un dépassement est signalé
+      sans supprimer les copies non expirées pour faire de la place.</p>
+
+    <h2>Autorisations et contrôle</h2>
+    <p>Vous choisissez le dossier avec une autorisation de lecture et vous autorisez
+      séparément le site GLPI. Une permission Chrome ne donne aucun droit dans
+      GLPI. À partir de la version 0.8.6, la popup demande un accord préalable aux
+      lectures et copies ; seules les associations GLPI en HTTPS sont acceptées,
+      et le pont contrôle l’origine, la page et la permission du site.</p>
+    <p>Vous pouvez retirer cet accord dans la popup de la version 0.8.6 et révoquer
+      l’accès au site ou au dossier dans Chrome. Cela bloque les nouveaux accès
+      concernés sans effacer les copies existantes ni rappeler les fichiers déjà
+      déposés. Les données locales ne sont pas synchronisées par
+      <code>chrome.storage.sync</code>. Désinstaller l’extension supprime normalement
+      son stockage local ; effacer uniquement l’historique de navigation ne suffit
+      pas. Les fichiers déjà transmis au GLPI restent sous la responsabilité de
+      votre organisation.</p>
+
+    <h2>Contact et demandes concernant vos données</h2>
+    <p>Pour toute question sur l’extension ou l’exercice de vos droits concernant
+      un traitement réalisé par SOIPP, écrivez à
+      <a href="mailto:contact@soipp.com">contact@soipp.com</a>. Pour les dictées
+      stockées dans votre GLPI ou SharePoint, contactez le responsable de votre
+      organisation, qui contrôle ces données et leurs accès. Ne joignez pas de
+      dictée, mot de passe ou autre secret à une simple demande de support.</p>
+
+    <h2>Hébergement de cette politique</h2>
+    <p>Cette page est hébergée par GitHub Pages, sans script, outil d’analyse ou
+      formulaire ajouté par SOIPP. GitHub indique conserver l’adresse IP des
+      visiteurs pour la sécurité de son hébergement ; voir sa
+      <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">déclaration de confidentialité</a>.
+      Ce site n’héberge aucun fichier audio.</p>
+
+    <footer><a href="../">Toutes les politiques SOIPP</a></footer>
+  </main>
+</body>
+</html>
