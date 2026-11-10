@@ -2,6 +2,18 @@
 
 L’accueil et le README s’adressent aux personnes qui consultent les politiques. Les indications de publication sont regroupées dans ce document.
 
+## Contenu public : le strict nécessaire
+
+Les politiques exposent uniquement les informations exigées par la réglementation et le store concernés, dans un langage simple et concis. Elles décrivent les pratiques relatives aux données, sans servir de documentation du fonctionnement interne du produit.
+
+- Conserver toutes les mentions applicables : données traitées, finalités, collecte et transmissions effectives, destinataires, conservation et suppression, identité et contact du responsable, droits et modalités d’exercice. Inclure les bases légales, transferts internationaux et autres mentions lorsqu’ils sont requis.
+- Ne pas publier de détails internes inutiles à cette information : architecture, serveurs, adresses IP, endpoints, chemins, noms de services, procédures d’authentification, mécanismes de sécurité détaillés, code, journaux ou organisation technique.
+- Décrire un accès ou un traitement local lorsqu’il doit être déclaré, même sans transmission extérieure. Ne pas omettre une collecte, un destinataire ou un traitement obligatoire au motif de préserver le fonctionnement interne.
+- Le propriétaire vérifie les faits dans ses sources privées, puis rédige seulement l’information publique nécessaire. Aucun secret, donnée client ou extrait privé ne doit être reproduit.
+- Ne pas inventer une absence de collecte, de partage, une durée, une garantie de sécurité ou un contact. Tout fait nécessaire manquant est à confirmer avec le responsable du produit avant publication.
+
+La concision ne dispense pas d’une information complète, exacte et cohérente avec le produit et sa déclaration au store.
+
 ## Publier une politique
 
 1. Mettre à jour la branche `main` du dépôt `SOIPP/privacy-policies`.
@@ -25,4 +37,5 @@ Publier uniquement du contenu destiné au public. Les sources privées, secrets 
 ## Références
 
 - [Exigences du Chrome Web Store sur les données et la confidentialité](https://developer.chrome.com/docs/webstore/program-policies/user-data-faq)
+- [CNIL : information des personnes et transparence](https://www.cnil.fr/fr/conformite-rgpd-information-des-personnes-et-transparence)
 - [GitHub Pages](https://docs.github.com/en/pages)
